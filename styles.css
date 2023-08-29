@@ -1,10 +1,17 @@
-li svg{
-    width: 20px;
+.custom-navbar {
+    border-radius: 1rem;
+    margin: 0.6rem;
+  }
+
+.bi{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
 }
 
-nav ul{
-    display:flex;
-    justify-content: space-between;
-    flex-direction: row;
-    list-style: none;
-}
+.navbar-nav .nav-link {
+    margin-right: 20px;
+    font-size: large;
+  }
+
+ 
