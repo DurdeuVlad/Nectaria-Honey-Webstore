@@ -1,0 +1,10 @@
+li svg{
+    width: 20px;
+}
+
+nav ul{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
+}
