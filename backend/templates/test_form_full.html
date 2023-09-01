@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Data Form</title>
+</head>
+<body>
+    <h1>Customer Data Form</h1>
+    <form method="post">
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email"><br>
+
+        <label for="delivery_method">Metoda de livrare:</label>
+        <input type="text" name="delivery_method" id="delivery_method"><br>
+
+        <label for="payment_method">Metoda de plata:</label>
+        <input type="text" name="payment_method" id="payment_method"><br>
+
+        <h2>Persoana juridica: (optional):</h2>
+        <label for="legal_entity">Persoana juridica:</label>
+        <input type="checkbox" name="legal_entity" id="legal_entity"><br>
+
+        <label for="cif">CIF:</label>
+        <input type="text" name="cif" id="cif"><br>
+
+        <label for="company">Firma:</label>
+        <input type="text" name="company" id="company"><br>
+
+        <label for="registration_number">Numar de identificare/inregistrare:</label>
+        <input type="text" name="registration_number" id="registration_number"><br>
+
+        <h2>Date personale: </h2>
+        <label for="last_name">Nume de familie:</label>
+        <input type="text" name="last_name" id="last_name"><br>
+
+        <label for="first_name">Prenume:</label>
+        <input type="text" name="first_name" id="first_name"><br>
+
+        <label for="address">Adresa (str. si nr.):</label>
+        <input type="text" name="address" id="address"><br>
+
+        <label for="county">Judet:</label>
+        <input type="text" name="county" id="county"><br>
+
+        <label for="city">Localitate:</label>
+        <input type="text" name="city" id="city"><br>
+
+        <label for="postal_code">Cod postal:</label>
+        <input type="text" name="postal_code" id="postal_code"><br>
+
+        <label for="phone">Telefon:</label>
+        <input type="tel" name="phone" id="phone"><br>
+
+       
+
+        <!-- Alternative Address Fields -->
+        <h2>Adresa alternativa (optional):</h2>
+        <label for="delivery_to_other_address">Livrare la o alta adresa:</label>
+        <input type="checkbox" name="delivery_to_other_address" id="delivery_to_other_address"><br>
+
+        <label for="alt_last_name">Nume de familie:</label>
+        <input type="text" name="alt_last_name" id="alt_last_name"><br>
+
+        <label for="alt_first_name">Prenume:</label>
+        <input type="text" name="alt_first_name" id="alt_first_name"><br>
+
+        <label for="alt_address">Adresa (str. si nr.):</label>
+        <input type="text" name="alt_address" id="alt_address"><br>
+
+        <label for="alt_county">Judet:</label>
+        <input type="text" name="alt_county" id="alt_county"><br>
+
+        <label for="alt_city">Localitate:</label>
+        <input type="text" name="alt_city" id="alt_city"><br>
+
+        <label for="alt_postal_code">Cod postal:</label>
+        <input type="text" name="alt_postal_code" id="alt_postal_code"><br>
+
+        <label for="alt_phone">Telefon:</label>
+        <input type="tel" name="alt_phone" id="alt_phone"><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+    {% if message %}
+    <div>{{ message }}</div>
+    {% endif %}
+</body>
+</html>
