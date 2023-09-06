@@ -1,0 +1,105 @@
+
+.custom-navbar {
+  border-radius: 1rem;
+  margin: 0.6rem;
+  box-shadow: 5px 5px 5px rgba(216, 176, 136, 0.4);
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  margin-right: 140px;
+  margin-left: 140px;
+  margin-top: 27px;
+  
+}
+
+.bi-cart {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  color: black;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 30px;
+  font-size: large;
+}
+
+#navLogo {
+  width: 70px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: rgb(231, 231, 231);
+}
+
+.btn:hover{
+  background-color: rgb(231, 231, 231);
+}
+
+.carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1; 
+}
+/*
+#about-us{
+  margin-top: 1000px;
+text-align: center;
+  font-family: 'Kreon', serif;
+  font-size: 40px;
+
+  
+}
+
+
+#about-us-ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  margin-top: 50px;
+  background-image: url(Images/backgroundimg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height:700px;
+  border-radius: 20px;
+  font-family: 'Kreon', serif;
+  color: white;
+
+}
+
+
+#about-us-ul li{
+  padding-top: 300px;
+  
+}
+
+*/
+
+#about-us{
+ margin-top: 800px;
+ font-family: 'Kreon', serif;
+}
+
+.slideanim{
+  background-image: url(Images/backgroundimg.jpg);
+  width: 1000px;
+  height:500px;
+  border-radius: 20px;
+  color: white;
+  padding-top: 200px;
+  background-position: center;
+  margin-left:auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+}
+
+h4{
+  font-style: italic;
+}
