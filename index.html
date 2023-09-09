@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Nectaria Honey Store</title>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Kreon&family=Phudu&family=Poppins:wght@300&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="Images/bearIcon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Poppins:wght@300&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark custom-navbar">
+<nav class="navbar navbar-expand-sm  navbar-dark custom-navbar">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Logo</a>
+    <a class="navbar-brand" href="#"> <img src="Images/logo.png" id="navLogo"> </a>
     <ul class="navbar-nav mx-auto">
       <!-- Additional Links in the Middle -->
       <li class="nav-item">
-        <a class="nav-link" href="#">Homepage</a>
+        <a class="nav-link" href="#" style="color: black;">Homepage</a>
       </li>
       <li class="nav-item">
         <div class="dropdown">
-          <button type="button" class="btn btn-primary dropdown-toggle nav-link" data-bs-toggle="dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle nav-link" data-bs-toggle="dropdown"  style="color: black; font-family: 'Poppins', sans-serif;">
             Produse
           </button>
           <ul class="dropdown-menu">
@@ -31,7 +34,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#"  style="color: black;">Contact</a>
       </li>
       <!-- End of Additional Links in the Middle -->
     </ul>
@@ -46,6 +49,97 @@
     </ul>
   </div>
 </nav>
+
+<!-- Carousel ----------------------------------------------->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+<!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Images/carusel1.png" alt="Los Angeles" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Slide 1</h3>
+        <p>Some text here</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Images/carusel2.png" alt="Chicago" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Slide 2</h3>
+        <p>Some text here</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="Images/carusel1.png" alt="New York" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>slide 3</h3>
+        <p>Some text here</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- About Us ----------------------------------------------->
+<!--
+<div class="container">
+
+  <p id="about-us"> Despre noi </p>
+
+  <ul id="about-us-ul">
+    <li>
+      <img src="Images/li1.png">
+      <h3> Producator local </h3>
+      </li>
+    <li> 
+      <img src="Images/li2.png">
+      <h3>Produse Bio </h3>
+    </li>
+    <li>
+      <img src="Images/li3.png">
+      <h3>Albine crescute la tara</h3>
+      </li>
+  </ul>
+
+</div>
+-->
+<div id="about-us" class="container-fluid text-center">
+  <h2>Informatii</h2>
+  <h4>Despre noi</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <img src="Images/li1.png">
+      <h4>Producator Local</h4>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <img src="Images/li2.png">
+      <h4>Albine Harnice</h4>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <img src="Images/li3.png">
+      <h4> Produse Bio </h4>
+    </div>
+  </div>
+
+
+
 
 </body>
 </html>
