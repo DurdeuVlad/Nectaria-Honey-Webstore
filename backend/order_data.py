@@ -55,7 +55,7 @@ if __name__ == '__main__':
     # Print the generated list
     print(data_list)
     # Create a customer with missing alternative address information
-    customer1 = CustomerData("2023-09-01", "customer1@example.com", "Standard", "PayPal", "Individual",  None, 
+    customer1 = CustomerData("2023-09-01", "customer1@example.com", "Standard", "PayPal", False,  None, 
                             None, None, "1234", "Smith", "Alice", "456 Park Ave", "County C", "City Z", "67890", 
                             "555-555-5555")
 
@@ -78,8 +78,8 @@ if __name__ == '__main__':
     print(data_list2)
     print(data_list3)
 
-    sheets_api.Add_Data(data_list)
-    sheets_api.Add_Data(data_list1)
-    sheets_api.Add_Data(data_list2)
-    sheets_api.Add_Data(data_list3)
+    sheets_api.Add_Raw_Order_Data(data_list)
+    sheets_api.Add_Raw_Order_Data(data_list1)
+    sheets_api.Add_Raw_Order_Data(data_list2)
+    sheets_api.Add_Raw_Order_Data(data_list3)
 

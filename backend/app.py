@@ -40,7 +40,7 @@ def index():
                                 alt_city, alt_postal_code, alt_phone)
 
         # Assuming you have a sheets_api function to add the data to Google Sheets
-        sheets_api.Add_Data(customer.to_list())
+        sheets_api.Add_Raw_Order_Data(customer.to_list())
 
         # Redirect to a thank you page or display a success message
     message = "Your order was successfully placed!"
